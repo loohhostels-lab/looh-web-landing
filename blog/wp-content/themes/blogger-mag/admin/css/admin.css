@@ -1,0 +1,90 @@
+.blogger-mag-notice {
+  position: relative;
+  padding: 8px;
+}
+.blogger-mag-notice-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogger-mag-notice-content .blogger-mag-notice_image {
+  display: flex;
+  flex: 0 1 40%;
+  max-width: 40%;
+  min-height: 100px;
+  border-right: 1px solid #FCFCFD;
+  justify-content: end;
+  align-items: center;
+}
+.blogger-mag-notice_text {
+  flex: 0 1 70%;
+  max-width: 70%;
+}
+.blogger-mag-notice-started {
+  padding: 38px 38px 38px 20px !important;
+  position: relative;
+}
+.blogger-mag-notice-links>.blogger-mag-videos {
+    display: none;
+}
+.blogger-mag-notice-content .blogger-mag-notice_image .blogger-mag-screenshot {
+  width: auto;
+  object-fit: contain;
+  max-height: 250px;
+}
+.blogger-mag-notice-content .text_heading {
+  margin-top: 0;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.blogger-mag-notice_text .panel-column-6{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  gap: 20px;
+  margin-top: 16px;
+}
+.panel-column-6 .blogger-mag-notice-buttons{
+  display: flex;
+  gap: 10px;
+  /* margin-top: 10px; */
+  flex-wrap: wrap;
+}
+.panel-column-6 .blogger-mag-notice-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.blogger-mag-notice_text .notice p, .notice-title, div.updated p, div.error p, .form-table td .notice p  {padding-right: 25px; font-size: 15px;}
+.blogger-mag-notice-link{ 
+  display:inline;
+  color: var(--wp-admin-theme-color);
+}
+.admin-bar .blogger-mag-btn-get-started, .admin-bar .blogger-mag-btn-demos, .admin-bar .blogger-mag-btn-demos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.admin-bar .blogger-mag-notice-buttons :is( .blogger-mag-btn-get-started, .blogger-mag-btn-demos) .dashicons{
+  line-height: 1.2;
+  color: inherit !important;
+}
+
+#accordion-section-theme_info_section{
+  display: inherit !important;
+}
+#accordion-section-theme_info_section button.accordion-trigger{
+  padding-right: 14px;
+}
+#accordion-section-theme_info_section .accordion-section-title::after{
+  display: none;
+}
+#accordion-section-theme_info_section .accordion-section-title{
+  border-left-color: var(--wp-admin-theme-color);
+  color: var(--wp-admin-theme-color);
+  pointer-events: none
+}

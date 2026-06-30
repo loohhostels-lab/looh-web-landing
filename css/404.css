@@ -1,0 +1,102 @@
+/* ==========================================================================
+   404.css — Page-specific styles for 404.html
+   ========================================================================== */
+
+.error-section {
+    background: #fdfdfd;
+    padding: 120px 0;
+}
+
+.error-content {
+    padding: 40px;
+}
+
+.error-code {
+    font-size: 150px;
+    font-weight: 800;
+    line-height: 1;
+    color: #ff713b;
+    margin-bottom: 20px;
+    font-family: "Cabin", sans-serif;
+    letter-spacing: -5px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(135deg, #ff713b 0%, #ff8c5a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: error-bounce 2.5s infinite ease-in-out;
+}
+
+.error-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 15px;
+    font-family: "Lora", serif;
+}
+
+.error-message {
+    font-size: 18px;
+    color: #6b6b6b;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.error-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.error-btn {
+    min-width: 180px;
+    padding: 14px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.error-btn.outline-btn {
+    background-color: transparent;
+    border-color: #ff713b;
+    color: #ff713b;
+}
+
+.error-btn.outline-btn:hover {
+    background-color: #ff713b;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+/* --- Footer Styles --- */
+.quick ul {
+    padding-left: 0;
+}
+
+.quick ul li {
+    list-style: none;
+}
+
+.quick ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.quick ul li a:hover {
+    color: #ff713b;
+}
+
+/* Bounce animation for 404 text */
+@keyframes error-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
