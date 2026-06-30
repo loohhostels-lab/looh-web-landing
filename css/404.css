@@ -60,6 +60,21 @@
     border: 2px solid transparent;
 }
 
+.error-btn::after {
+    display: none !important;
+}
+
+.error-btn:not(.outline-btn) {
+    background-color: #ff713b;
+    color: #ffffff;
+}
+
+.error-btn:not(.outline-btn):hover {
+    background-color: #e05e2d;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
 .error-btn.outline-btn {
     background-color: transparent;
     border-color: #ff713b;
