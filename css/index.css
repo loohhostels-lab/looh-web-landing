@@ -152,3 +152,88 @@
     font-style: normal;
     line-height: 1.8;
 }
+
+/* --- Top Areas Section --- */
+.top-areas-section {
+    background: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.area-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.area-card-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.area-card {
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: #ff713b;
+}
+
+.area-card-icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: rgba(255, 113, 59, 0.1);
+    color: #ff713b;
+    font-size: 24px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.area-card:hover .area-card-icon {
+    background: #ff713b;
+    color: #ffffff;
+}
+
+.area-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #19191a;
+    margin-bottom: 12px;
+}
+
+.area-card p {
+    font-size: 14px;
+    color: #707079;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.area-card .explore-btn {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ff713b;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.area-card:hover .explore-btn {
+    color: #e65c2b;
+}
