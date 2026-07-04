@@ -212,8 +212,9 @@
                             <nav class="mainmenu">
                                 <ul>
                                     <li><a href="./">Home</a></li>
-                                    <li><a href="./hostel-in-patna.html">Boys Hostel in Patna</a></li>
-                                    <li><a href="./girls-hostel-in-patna.html">Girls Hostels in Patna</a></li>
+                                    <li><a href="./">About-Us</a></li>
+                                    <li><a href="./hostel-in-patna.html">Boys Hostel</a></li>
+                                    <li><a href="./girls-hostel-in-patna.html">Girls Hostels</a></li>
                                     <li><a href="#">Top Areas</a>
                                         <ul class="dropdown">
                                             <li class="active"><a href="./hostel-in-boring-road.html">Boring Road</a>
@@ -255,8 +256,9 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
-                        <img src="img/hero/banner-app.webp"
-                            alt="LOOH App Interface showing the best student hostels in Patna" fetchpriority="high" />
+                        <a href="https://play.google.com/store/apps/details?id=com.loohhostels">
+                            <img src="img/hero/banner-app.webp" alt="LOOH Hostel App" fetchpriority="high" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -449,30 +451,44 @@
                     <div class="col-lg-12">
                         <div class="section-title text-center">
                             <span>Clarify Your Doubts</span>
-                            <h2>Frequently Asked Questions About Hostels in Patna</h2>
+                            <h2>Frequently Asked Questions About Looh Hostels</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <div class="faq-item">
-                            <h3>How do I find the best hostel in Patna for students?</h3>
-                            <p>The easiest way to find the best hostel in Patna is by downloading the LOOH app. We
-                                provide a curated list of verified, zero-brokerage properties across top student hubs,
-                                allowing you to filter by amenities, budget, and distance to your coaching center.</p>
+                            <h3>How can I find the best student hostel?</h3>
+                            <p>You can easily find the <strong>Best Student Hostel</strong> on <strong>"Looh Hostels App"</strong>. 
+                               Search by your preferred location, compare verified hostels, check prices, photos, and facilities, 
+                               and choose the hostel that matches your budget and needs
+                            </p>
                         </div>
                         <div class="faq-item">
-                            <h3>Are there safe girls' hostels in Patna?</h3>
-                            <p>Yes, student safety is our primary focus. The top-rated girls' hostels listed on LOOH
-                                feature 24/7 CCTV surveillance, biometric entry, and an exclusive in-app Emergency SOS
-                                tool for immediate assistance.</p>
+                            <h3>Are the hostels listed on Looh Hostels verified and safe?</h3>
+                            <p>Yes, Looh Hostels lists verified hostels to help students find safe and reliable accommodation. 
+                               You can also check hostel details, photos and available facilities before booking. 
+                            </p>
                         </div>
                         <div class="faq-item">
-                            <h3>Which areas in Patna have the best PGs and hostels?</h3>
-                            <p>The best areas for student accommodation include Boring Road, Kankarbagh, and Rajendra
-                                Nagar. These locations offer great connectivity, vibrant student communities, and
-                                immediate proximity to Patna's leading educational institutes like Allen and Physics
-                                Wallah.</p>
+                            <h3>Does Looh Hostels charge brokerage or hidden fees?</h3>
+                            <p>No. Looh Hostels does not charge any brokerage or hidden fees. You can search and book 
+                               hostels with transparent pricing. 
+                            </p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>What facilities do Looh verified hostels offer?</h3>
+                            <p>Most Looh verified hostels provide facilities like <strong>Wi-Fi</strong>, <strong>AC and Non-AC rooms</strong>, <strong>Healthy Meals</strong>, 
+                               <strong>CCTV security</strong>, <strong>Power Backup</strong>, <strong>Housekeeping</strong>, <strong>Laundry</strong>, and <strong>Clean Drinking Water</strong>. 
+                               Facilities may vary from one hostel to another.
+                            </p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>In Which Areas Does Looh Hostels Offer the Best Student Hostels?</h3>
+                            <p>Looh Hostels offers verified student hostels in popular areas of Patna, such as <strong>Boring Road</strong>, 
+                               <strong>Kankarbagh</strong>, <strong>Rajendra Nagar</strong>, <strong>Bailey Road</strong>, and <strong>Ashiana 
+                                Digha Road</strong>. These areas are close to many coaching institutes and colleges.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -526,7 +542,7 @@
         <section class="contact-section spad">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <!--<div class="col-lg-4">
                         <div class="contact-text">
                             <h2>Contact Info</h2>
                             <p>At Looh Hostel, we’re here to assist you with bookings, room availability, facilities, and any stay-related queries. Contact us anytime by phone, email, or visit us—we look forward to welcoming you.</p>
@@ -545,7 +561,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-lg-7 offset-lg-1">
                         <form action="https://formsubmit.co/loohhostels@gmail.com" method="POST" class="contact-form">
                             <!-- Hidden configurations for FormSubmit -->
@@ -558,8 +574,33 @@
                                 <div class="col-lg-6">
                                     <input type="tel" name="phone" placeholder="Your Phone Number" required>
                                 </div>
-                                <div class="col-lg-12">
+                                <div class="col-lg-6">
                                     <input type="email" name="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <select id="hostelType" name="hostelType" required>
+                                        <option value="" selected disabled>Select Hostel Type</option>
+                                            <option value="boys">Boys Hostel</option>
+                                            <option value="girls">Girls Hostel</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6">
+                                <select id="roomType" name="roomType" required>
+                                        <option value=""selected disabled>Select Room Type</option>
+                                        <option value="single">Single</option>
+                                        <option value="double">Double Share</option>
+                                        <option value="triple">Triple Share</option>
+                                        <option value="4-share">4 Share</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6">
+                                <select id="areaType" name="areaType" required>
+                                        <option value=""selected disabled>Patna Area Type</option>
+                                        <option value="boring">Boring Road</option>
+                                        <option value="kankarbagh">Kankarbagh</option>
+                                        <option value="rajendra">Rajendra Nagar</option>
+                                        <option value="danapur">Danapur</option>
+                                    </select>
                                 </div>
                                 <div class="col-lg-12">
                                     <textarea name="message" placeholder="Your Message" required></textarea>
