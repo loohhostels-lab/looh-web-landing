@@ -1889,6 +1889,35 @@ ul, ol {
 	padding-left: 25px;
 	margin-bottom: 28px;
 }
+.contact-form select {
+	width: 100%;
+	height: 50px;
+	border: 1px solid #e1e1e1;
+	font-size: 16px;
+	color: #aaaab3;
+	padding-left: 25px;
+	margin-bottom: 28px;
+	background: #fff;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23aaaab3' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 15px center;
+	cursor: pointer;
+}
+.contact-form .nice-select {
+	width: 100%;
+	height: 50px;
+	line-height: 48px;
+	border: 1px solid #e1e1e1;
+	border-radius: 0;
+	font-size: 16px;
+	color: #aaaab3;
+	padding-left: 25px;
+	margin-bottom: 28px;
+	float: none;
+}
 .contact-form input::-webkit-input-placeholder {
 	color: #aaaab3;
 }
@@ -1912,6 +1941,7 @@ ul, ol {
 	color: #aaaab3;
 	padding-left: 25px;
 	padding-top: 12px;
+	margin-top: 10px;
 	margin-bottom: 33px;
 	resize: none;
 }
