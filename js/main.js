@@ -161,7 +161,8 @@
                     '/hostel-in-muzaffarpur.html',
                     '/hostel-in-gaya.html',
                     '/contact.html',
-                    '/404.html'
+                    '/about-us.html',
+                    '/404.html',
                 ];
 
                 // If target looks like a page and isn't in validPages, route to 404
