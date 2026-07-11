@@ -550,81 +550,75 @@
             </div>
         </section>
 
-        <!-- Contact Section Begin -->
-        <section class="contact-section spad">
-            <div class="container">
-                <div class="row">
-                    <!--<div class="col-lg-4">
-                        <div class="contact-text">
-                            <h2>Contact Info</h2>
-                            <p>At Looh Hostel, we’re here to assist you with bookings, room availability, facilities, and any stay-related queries. Contact us anytime by phone, email, or visit us—we look forward to welcoming you.</p>
-                            <div class="contact-info">
-                                <div class="item">
-                                    <div class="label">Address:</div>
-                                    <div class="value">RPS Nagar, RPS More, Danapur, Patna, Bihar - 801503</div>
-                                </div>
-                                <div class="item">
-                                    <div class="label">Phone:</div>
-                                    <div class="value">+91-92048 13265</div>
-                                </div>
-                                <div class="item">
-                                    <div class="label">Email:</div>
-                                    <div class="value">loohhostels@gmail.com</div>
-                                </div>
-                            </div>
+        <!-- ENQUIRY -->
+        <section class="section enquiry" id="enquire">
+            <div class="wrap">
+                <div class="enquiry-copy">
+                    <span class="tag">// GET IN TOUCH</span>
+                    <h2>Tell us what you're looking for</h2>
+                    <p>Fill this out and our team will shortlist verified hostels matching your budget and area — no
+                        brokerage, no
+                        obligation.</p>
+                    <ul>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>Free shortlist within 24 hours</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>Only verified, inspected hostels</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>Zero brokerage, always</li>
+                    </ul>
+                </div>
+                <div class="form-card">
+                    <div class="form-row">
+                        <div class="field"><label for="name">Full Name</label><input id="name" type="text"
+                                placeholder="Your name">
                         </div>
-                    </div> -->
-                    <div class="col-lg-7 offset-lg-1">
-                        <form action="https://formsubmit.co/loohhostels@gmail.com" method="POST" class="contact-form">
-                            <!-- Hidden configurations for FormSubmit -->
-                            <input type="hidden" name="_subject" value="New Inquiry from LOOH Main Page">
-                            <input type="hidden" name="_template" value="table">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <input type="text" name="name" placeholder="Your Name" required>
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="tel" name="phone" placeholder="Your Phone Number" required>
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="email" name="email" placeholder="Your Email" required>
-                                </div>
-                                <div class="col-lg-6">
-                                    <select id="hostelType" name="hostelType" required>
-                                        <option value="" selected disabled>Select Hostel Type</option>
-                                        <option value="boys">Boys Hostel</option>
-                                        <option value="girls">Girls Hostel</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-6">
-                                    <select id="roomType" name="roomType" required>
-                                        <option value="" selected disabled>Select Room Type</option>
-                                        <option value="single">Single</option>
-                                        <option value="double">Double Share</option>
-                                        <option value="triple">Triple Share</option>
-                                        <option value="4-share">4 Share</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-6">
-                                    <select id="areaType" name="areaType" required>
-                                        <option value="" selected disabled>Patna Area Type</option>
-                                        <option value="boring">Boring Road</option>
-                                        <option value="kankarbagh">Kankarbagh</option>
-                                        <option value="rajendra">Rajendra Nagar</option>
-                                        <option value="danapur">Danapur</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-12" style="margin-top: 30px;">
-                                    <textarea name="message" placeholder="Your Message" required></textarea>
-                                    <button type="submit">Submit Now</button>
-                                </div>
-                            </div>
-                        </form>
+                        <div class="field"><label for="phone">Phone Number</label><input id="phone" type="tel"
+                                placeholder="+91 00000 00000"></div>
                     </div>
+                    <div class="form-row">
+                        <div class="field full"><label for="email">Email Address</label><input id="email" type="email"
+                                placeholder="you@example.com"></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="hostelType">Hostel Type <small>Boys or Girls hostel</small></label>
+                            <select id="hostelType">
+                                <option>Boys Hostel</option>
+                                <option>Girls Hostel</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="roomType">Room Type <small>Single or sharing</small></label>
+                            <select id="roomType">
+                                <option>Single Room</option>
+                                <option>Sharing Room</option>
+                                <option>Not sure yet</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field full"><label for="area">Preferred Area in Patna</label>
+                            <select id="area">
+                                <option>Boring Road</option>
+                                <option>Kankarbagh</option>
+                                <option>Bailey Road</option>
+                                <option>Rajendra Nagar</option>
+                                <option>Danapur</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field full"><label for="msg">Message <small>Optional</small></label><textarea
+                                id="msg" placeholder="Anything specific you're looking for?"></textarea></div>
+                    </div>
+                    <button class="btn btn-primary form-submit">Submit Now</button>
                 </div>
             </div>
         </section>
-        <!-- Contact Section End -->
 
         <style>
             .contact-info .item {
