@@ -128,6 +128,14 @@
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <img src="img/looh-hostels-logo.png" alt="Looh Hostels Logo" class="preloader-logo">
+        </div>
+    </div>
+
     <div class="offcanvas-menu-overlay"></div>
     <div class="canvas-open">
         <i class="icon_menu"></i>
@@ -728,6 +736,22 @@
     <script src="js/jquery.slicknav.js" defer></script>
     <script src="js/owl.carousel.min.js" defer></script>
     <script src="js/main.js" defer></script>
+
+    <!--Preloader-->
+    <script>
+        window.addEventListener("load", function () {
+            const preloader = document.getElementById("preloader");
+
+            setTimeout(() => {
+                preloader.classList.add("hide");
+
+                setTimeout(() => {
+                    preloader.remove();
+                }, 500);
+
+            }, 500);
+        });
+    </script>
 </body>
 
 </html>
