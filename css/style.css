@@ -2388,6 +2388,7 @@ ul, ol {
 /* ---------- FORM ---------- */
 .enquiry {
   background: radial-gradient(circle at 20% 20%, var(--teal-700), var(--teal-900) 65%);
+  padding: 100px;
 }
 
 .enquiry .wrap {
@@ -2395,7 +2396,7 @@ ul, ol {
   grid-template-columns: 0.85fr 1.15fr;
   gap: 50px;
   align-items: center;
-	padding: 20px;
+  padding: 20px;
 }
 
 .enquiry-copy .tag {
@@ -2637,5 +2638,68 @@ ul, ol {
 
     .form-submit{
         font-size:.95rem;
+    }
+}
+
+/* ==========================
+   Looh Hostels Preloader
+========================== */
+
+#preloader {
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    transition: opacity .5s ease, visibility .5s ease;
+}
+
+#preloader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-content {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader-logo {
+    width: 100px;
+    height: auto;
+    animation: pulse 1.8s ease-in-out infinite;
+    z-index: 2;
+}
+
+.loader-ring {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 5px solid rgba(51,115,112,.15);
+    border-top: 5px solid #337370;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+/* Rotation */
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Logo Pulse */
+@keyframes pulse {
+    0%,100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
     }
 }
