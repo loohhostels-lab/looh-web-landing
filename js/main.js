@@ -14,10 +14,27 @@
     /*------------------
         Preloader
     --------------------*/
-    $(window).on('load', function () {
+    function removePreloader() {
         $(".loader").fadeOut();
         $("#preloder").delay(200).fadeOut("slow");
+        
+        var preloader = $("#preloader");
+        if (preloader.length && !preloader.hasClass("hide")) {
+            preloader.addClass("hide");
+        }
+    }
+
+    $(window).on('load', function () {
+        removePreloader();
     });
+
+    // Failsafe: if window load already fired or document is interactive, dismiss immediately
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        removePreloader();
+    }
+
+    // Failsafe timeout to prevent stuck preloader if resources hang
+    setTimeout(removePreloader, 1500);
 
     /*------------------
         Background Set
@@ -176,5 +193,29 @@
             // Safe fallback
         }
     });
+    /*------------------
+        Form Validation
+    --------------------*/
+    var submitBtn = $('.form-submit');
+    var requiredInputs = $('#name, #phone, #email');
+
+    function checkFormValidity() {
+        var allFilled = true;
+        requiredInputs.each(function() {
+            if ($(this).val().trim() === '') {
+                allFilled = false;
+            }
+        });
+        if (allFilled) {
+            submitBtn.removeAttr('disabled');
+        } else {
+            submitBtn.attr('disabled', 'disabled');
+        }
+    }
+
+    if (requiredInputs.length && submitBtn.length) {
+        checkFormValidity();
+        requiredInputs.on('input change keyup paste', checkFormValidity);
+    }
 
 })(jQuery);

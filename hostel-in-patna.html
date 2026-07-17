@@ -48,7 +48,7 @@
         .main-cta-btn { padding: 14px 35px; font-size: 18px; margin-top: 20px; display: inline-block; font-weight: 600; border-radius: 4px; }
         .main-cta-btn:hover { color: #000; }
         /* Preloader CSS removed/hidden to boost LCP and FCP */
-        #preloder { display: none !important; }
+        #preloader { display: none !important; }
     </style>
     <script type="application/ld+json">
     [
@@ -185,7 +185,13 @@
 </head>
 
 <body>
-    <div id="preloder" aria-hidden="true"><div class="loader"></div></div>
+    <!-- Preloader -->
+    <div id="preloader" aria-hidden="true">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <img src="img/looh-hostels-logo.png" alt="Looh Hostels Logo" class="preloader-logo">
+        </div>
+    </div>
 
     <div class="offcanvas-menu-overlay"></div>
     <div class="canvas-open"><i class="icon_menu"></i></div>

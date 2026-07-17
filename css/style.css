@@ -850,7 +850,7 @@ ul, ol {
 -----------------------*/
 
 .footer-section {
-	background: #00535e;
+	background: var(--teal-800);
 }
 .footer-section .footer-text {
 	padding: 80px 0 30px;
@@ -2388,7 +2388,7 @@ ul, ol {
 /* ---------- FORM ---------- */
 .enquiry {
   background: radial-gradient(circle at 20% 20%, var(--teal-700), var(--teal-900) 65%);
-  padding: 100px;
+  padding: 100px 0;
 }
 
 .enquiry .wrap {
@@ -2410,7 +2410,8 @@ ul, ol {
 
 .enquiry-copy h2 {
   color: #fff;
-  font-size: 1.9rem;
+  font-size: 44px;
+  line-height: 1.3;
   margin-bottom: 16px;
 }
 
@@ -2523,6 +2524,29 @@ ul, ol {
   font-size: 1rem;
   border-radius: var(--radius-md);
   margin-top: 4px;
+  background-color: var(--teal-600);
+  border: 1px solid var(--teal-600);
+  color: var(--white);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.form-submit:hover:not(:disabled) {
+  background-color: var(--teal-700);
+  border-color: var(--teal-700);
+}
+
+.form-submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(42, 122, 111, 0.25);
+}
+
+.form-submit:disabled {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  color: #777777;
+  cursor: not-allowed;
 }
 
 /* ===========================
@@ -2564,7 +2588,7 @@ ul, ol {
     }
 
     .enquiry-copy h2{
-        font-size:1.8rem;
+        font-size:32px;
         line-height:1.3;
     }
 
@@ -2610,7 +2634,7 @@ ul, ol {
     }
 
     .enquiry-copy h2{
-        font-size:1.5rem;
+        font-size:26px;
     }
 
     .enquiry-copy p{

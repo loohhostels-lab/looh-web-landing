@@ -100,7 +100,7 @@
         .faq-item p { margin-top: 10px; color: #666; }
         .bg-light a:hover{ color: #2B7A78; }
         
-        #preloder { display: none !important; }
+        #preloader { display: none !important; }
 
         @media (max-width: 768px) {
             .horizontal-card { flex-direction: column; }
@@ -110,7 +110,13 @@
     </style>
 </head>
 <body>
-    <div id="preloder" aria-hidden="true"><div class="loader"></div></div>
+    <!-- Preloader -->
+    <div id="preloader" aria-hidden="true">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <img src="img/looh-hostels-logo.png" alt="Looh Hostels Logo" class="preloader-logo">
+        </div>
+    </div>
     
     <div class="offcanvas-menu-overlay"></div>
     <div class="canvas-open"><i class="icon_menu"></i></div>
